@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="205.0" prefWidth="204.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ClientController">
+   <children>
+      <Button fx:id="SignIn" layoutX="76.0" layoutY="153.0" mnemonicParsing="false" onAction="#SignIn" text="Sign In" />
+      <Label layoutX="59.0" layoutY="14.0" text="Sign In">
+         <font>
+            <Font name="Courier New Bold" size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="Username" layoutX="27.0" layoutY="67.0" promptText="Username" />
+      <Label fx:id="Error" layoutX="27.0" layoutY="94.0" textFill="RED" />
+   </children>
+</Pane>

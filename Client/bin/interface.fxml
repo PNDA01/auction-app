@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.text.TextFlow?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ClientController">
+   <children>
+      <ImageView fx:id="Image" fitHeight="248.0" fitWidth="277.0" layoutX="30.0" layoutY="65.0" pickOnBounds="true" preserveRatio="true" />
+      <Button fx:id="BidButton" layoutX="462.0" layoutY="323.0" mnemonicParsing="false" onAction="#Bid" text="Encherir">
+         <font>
+            <Font name="Courier New Bold" size="18.0" />
+         </font>
+      </Button>
+      <Label fx:id="Titre" layoutX="30.0" layoutY="21.0" text="Titre">
+         <font>
+            <Font name="Courier New Bold" size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="Enchere" layoutX="341.0" layoutY="328.0" prefHeight="25.0" prefWidth="104.0" promptText="Enchere" />
+      <TextFlow layoutX="341.0" layoutY="66.0" prefHeight="248.0" prefWidth="232.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Description:" wrappingWidth="54.13671875">
+               <font>
+                  <Font name="Courier New Bold" size="18.0" />
+               </font>
+            </Text>
+            <Separator prefHeight="0.0" prefWidth="232.0" />
+            <Text fx:id="Description" strokeType="OUTSIDE" strokeWidth="0.0" text="desc" wrappingWidth="54.13671875">
+               <font>
+                  <Font name="Courier New" size="14.0" />
+               </font>
+            </Text>
+            <Separator prefHeight="0.0" prefWidth="232.0" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Prix: ">
+               <font>
+                  <Font name="Courier New Bold" size="18.0" />
+               </font>
+            </Text>
+            <Text fx:id="Prix" strokeType="OUTSIDE" strokeWidth="0.0" text="420">
+               <font>
+                  <Font name="Courier New" size="18.0" />
+               </font>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text=" euros">
+               <font>
+                  <Font name="Courier New" size="18.0" />
+               </font>
+            </Text>
+         </children>
+      </TextFlow>
+      <Label fx:id="MessageBid" layoutX="341.0" layoutY="358.0" textFill="RED" />
+      <Text fx:id="Informations" layoutX="30.0" layoutY="345.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="265.0" />
+      <Text layoutX="279.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="End Date: ">
+         <font>
+            <Font name="Courier New Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text fx:id="Date" layoutX="379.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Thu 24 dec " wrappingWidth="192.13671875">
+         <font>
+            <Font name="Courier New" size="14.0" />
+         </font>
+      </Text>
+   </children>
+</Pane>
